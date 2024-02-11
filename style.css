@@ -34,6 +34,13 @@ header > .container-header{
     justify-content: space-between;
 }
 
+.logo-syakir{
+    position: relative;
+    width: 200px;
+    top: -65px;
+    
+}
+
 ul, p{
     display: flex;
     flex-direction: row;
