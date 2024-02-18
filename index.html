@@ -3,32 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Syakirudin</title>
 </head>
 <body>
 
-    <header>
-        <div class="container-header">
-            <div class="logo">
-                <a href="#"><img src="./img/logo-syakir.png" alt="logo" class="logo-syakir"></a>
-            </div>
-            <ul>
-                <li>About Me</li>
-                <li>Timeline</li>
-                <li>Project</li>
-                <li>Tech Stack</li>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mt-4 mx-4 rounded-navbar" style="border-radius: 50px;">
+        <div class="container-fluid ">
+          <div class="d-flex justify-content-between align-items-center w-100"> <!-- Added d-flex and justify-content-between -->
+            <a class="navbar-brand" href="#"><img src="./img/logo-syakir.png" alt="logo" class="img-fluid w-25 h-25"></a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border-radius: 25px;">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse " id="navbarNav" style="border-radius: 5px;">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Timeline</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TechStack</a>
+              </li>
             </ul>
+          </div>
         </div>
-    </header>
+    </nav>
 
     <main>
-        <div class="container-1">
-            <div class="name"></div>
-            <div class="introduction"></div>
-            <div class="picture-1"></div>
+      <section> 
+        <div class="home-container">
+            <div class="name-intro">
+                <h1>Hi, I'm Syakirudin</h1>
+                <h3>An Electrical & Electronic to Web Developer wannabe</h3>
+            </div>
+            <div class="intro">
+            <div class="self-intro">
+                <p>"Never too late to start learning something new; at least you die trying than die with nothing 🤷🏻‍♂️"</p>
+            </div>
+            <div class="img-intro">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="./img/IMG_20210513_095832-removebg-preview.png">
+                    <source media="(max-width: 500px)" srcset="./img/Muhamad_Syakirudin-removebg-preview.png">
+                    <img src="./img/IMG_20210513_095832-removebg-preview.png" alt="self-picture" class="self-picture">
+                </picture>
+                
+            </div>
+            </div>
+            <div class="icon">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-github"></i>
+                <i class="fas fa-file-pdf"></i>
+            </div>
+            
+
         </div>
+      </section>
+
+
+      <section> 
+        <button class="sort" id="sort"> Sort By : Newest to Oldest</button>
+        <div class="timeline-container" id="timeline-container">
+          
+          <div class="timeline-card">
+            <div class="timeline-content">
+            <div class="year"><h3>2018</h3></div>
+            <div class="timeline-details">
+              <ul>
+                <li><b>January</b><br>Graduated from UniKL MIAT 🎉 <br>First programming language C/C++ learned <code>printf("Hello, World!");</code> <br> Do some simple project such as calculator, student grading system, robot line follower and temperature control</li>
+                <li><b>April</b><br>Get a first job at Pentamaster<br>Involved with electrical and </li>
+              </ul>
+            </div>
+            </div>
+          </div>
+
+          <div class="timeline-card">
+            <div class="year"><h3>2021</h3></div>
+            <div class="timeline-details">
+              <ul>
+                <li>Second job at baosteel as electrical engineer</li>
+                <li>Appoint to take care line production</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-card">
+            <div class="year"><h3>2022</h3></div>
+            <div class="timeline-details">
+              <ul>
+                <li>Move to Samsung as process engineer</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-card">
+            <div class="year"><h3>2023</h3></div>
+            <div class="timeline-details">
+              <ul>
+                <li>Start to seek into IT field</li>
+                <li>Data engineer scholars </li>
+                <li>Data analysis courses</li>
+                <li>Web development class and bootcamp</li>
+              </ul>
+            </div>
+          </div>
+
+
+        </div>
+        <script src="./script.js"></script>
+      </section>
+
+      <section> Project</section>
+      <section> TechStack</section>
     </main>
+      
+
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
