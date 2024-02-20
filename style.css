@@ -73,7 +73,8 @@ section{
     /* border-style: solid; */
     width: fit-content;
     margin-top: 40px;
-    padding-left: 200px;
+    margin-left: 100px;
+    /* padding-left: 200px; */
 
 }
 
@@ -89,7 +90,7 @@ section{
     /* border-style: solid; */
     width: 600px;
     height: 250px;
-    padding-left: 100px;
+    /* padding-left: 100px; */
 }
 
 .self-picture{
@@ -118,8 +119,8 @@ section{
 }
 
 
+
 @media screen and (max-width: 500px) {
-    @media screen and (max-width: 500px) {
         * {
             margin: 0;
             padding: 0;
@@ -131,8 +132,17 @@ section{
         }
     
         .name-intro {
-            padding: 5px;
+            margin: 0 auto;
             font-size: 8px;
+            justify-content: center;
+
+        }
+
+        .name-intro > h1,h4{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
         
         .intro {
@@ -141,7 +151,7 @@ section{
             /* justify-content: flex-end; */
             padding: 0;
             height: 400px;
-            border-style: solid;
+            /* border-style: solid; */
         }
 
         .self-intro p {
@@ -162,7 +172,7 @@ section{
         }
     
         .self-picture {
-            border-style: solid;
+            /* border-style: solid; */
             position: relative;
             top: -250px; /* Position underneath the paragraph */
             left: 50px;
@@ -177,7 +187,7 @@ section{
             font-size: 100px; 
             display: flex;
             flex-direction: row;
-            border-style: solid;
+            /* border-style: solid; */
             justify-content: center;
             padding: 10px;
             transition: transform 0.3s ease; 
@@ -188,7 +198,62 @@ section{
         }
     }
     
+
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
 }
+
+/* .images-slide {
+    display: none;
+} */
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(4, 0, 255);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .caption-project{
+    color: #000000;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .title-project {
+    color: #000000;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
 
 .timeline-container{
     display: flex;
@@ -200,7 +265,7 @@ section{
 
 .timeline-card{
     justify-content: center;
-    border-style: solid;
+    /* border-style: solid; */
     /* padding: 100px ; */
     margin: 20px auto;
     width: 500px;
@@ -229,7 +294,8 @@ ul{
 }
 
 li{
-    font-size: 18px;
+    font-size: 14px;
+    margin: 0;
 }
 
 section > .sort{
@@ -246,4 +312,78 @@ section > .sort{
     border-radius: 8px; /* Rounded corners */
     background-color: #4CAF50; /* Green background */
       
+}
+
+@media screen and (max-width: 500px) {
+
+    .timeline-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* border-style: solid; */
+        padding: 0px ;
+        /* margin-bottom: 100px; */
+    }
+
+    .timeline-card{
+        justify-content: center;
+        /* border-style: solid; */
+        /* padding: 100px ; */
+        /* margin: 20px auto; */
+        width: 300px;
+        /* height: 300px; */
+    }
+
+    section > .sort{
+        align-items: end;
+        margin: 5px 0px 0px 100px;
+        border: none; /* Remove borders */
+        color: white; /* White text */
+        padding: 5px 16px; /* Padding */
+        text-align: center; /* Center text */
+        text-decoration: none; /* Remove underline */
+        display: inline-block; /* Make it inline */
+        font-size: 12px; /* Font size */
+        cursor: pointer; /* Add cursor pointer */
+        border-radius: 5px; /* Rounded corners */
+        background-color: #4CAF50; /* Green background */
+          
+    }
+
+
+
+
+
+}
+
+
+
+.icon-tech{
+    width: 50px;
+}
+
+.icon-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid; */
+    padding: 20px;
+    gap: 20px;
+}
+
+.icon-programming{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid; */
+}
+
+.icon-electrical{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid; */
 }
