@@ -132,7 +132,7 @@ section{
         }
     
         .name-intro {
-            margin: 0 auto;
+            margin: 20px auto;
             font-size: 8px;
             justify-content: center;
 
@@ -196,6 +196,13 @@ section{
         .icon i:hover {
             transform: scale(1.2); 
         }
+
+        .slideshow-container {
+            max-width: 100px;
+            position: absolute;
+            margin: auto;
+            border-style: solid;
+        }
     }
     
 
@@ -204,13 +211,25 @@ section{
     max-width: 1000px;
     position: relative;
     margin: auto;
+    border-style: solid;
 }
 
-/* .images-slide {
-    display: none;
-} */
+.images-slide {
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+}
 
-.prev, .next {
+.img-project{
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+    border-style: solid;
+
+}
+
+/* .prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -230,10 +249,9 @@ section{
     border-radius: 3px 0 0 3px;
   }
   
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
+ .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
-  }
+  } */
   
   /* Caption text */
   .caption-project{
@@ -252,6 +270,7 @@ section{
     padding: 8px 12px;
     position: absolute;
     top: 0;
+    border: solid;
   }
 
 
@@ -350,13 +369,27 @@ section > .sort{
           
     }
 
+    
+
+    .icon-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid; */
+        /* padding: 20px; */
+        gap: 10px;
+    }
+
 
 
 
 
 }
 
-
+.techstack-title > p{
+    padding-top: 50px;
+}
 
 .icon-tech{
     width: 50px;
@@ -364,26 +397,20 @@ section > .sort{
 
 .icon-container{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     /* border: 1px solid; */
     padding: 20px;
+    gap: 10px;
+}
+
+.icon-programming , .icon-electrical{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid; */
     gap: 20px;
-}
-
-.icon-programming{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid; */
-}
-
-.icon-electrical{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid; */
 }
