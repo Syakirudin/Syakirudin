@@ -24,7 +24,7 @@ body{
 header > .container-header{
     background-color: #E9E8E8;
     margin: 20px auto;
-    width: 1080px;
+    width: 900px;
     height: 60px;
     border: 2px solid white;
     border-radius: 50px;
@@ -135,6 +135,11 @@ section{
     font-family: "Roboto", sans-serif;
     font-weight: 800;
     font-size: 28px;
+}
+
+a{
+    list-style: none;
+    
 }
 
 
