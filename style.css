@@ -20,6 +20,12 @@ body{
     background-color: var(--bg-color);
 }
 
+.nav-link{
+    color: var(--first-color);
+    font-size: 20px;
+    font-style: bold;
+}
+
 
 header > .container-header{
     background-color: #E9E8E8;
@@ -177,9 +183,10 @@ a{
     
     color: black;
     font-size: 28px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-bottom: 400px;
     text-wrap: wrap;
-    width: 400px;
+    width: 600px;
     text-align: center;
     font-style: bold;
 }
