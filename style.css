@@ -24,7 +24,7 @@ body {
 }
 
 header > .container-header {
-    background-color: #20262E;
+    background-color: #E9E8E8;
     margin: 20px auto;
     width: 900px;
     height: 60px;
@@ -55,7 +55,7 @@ li {
 
 section {
     width: 1100px;
-    background-color: #fff;
+    background-color: #20262E;
     margin: 20px auto;
     box-shadow: 0 0 10px 2px rgb(182, 189, 192);
     border-radius: 10px;
