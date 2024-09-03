@@ -189,24 +189,38 @@ a {
 
 .timeline-card {
     justify-content: center;
-    margin: 10px auto;
-    width: 100%;
-    max-width: 500px;
+    background-color: #f9f9f9; /* Light background color for better readability */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Add padding inside the card */
+    margin: 20px auto; /* Adjusted margin for better spacing */
+    width: 500px;
 }
 
 .timeline-card .year {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
 .year > h3 {
-    background-color: rgb(255, 0, 221);
-    border: 2px solid;
+    background-color: #913175; /* Using the first color for consistency */
+    color: white; /* White text for contrast */
     border-radius: 5px;
     width: 100px;
     text-align: center;
+    padding: 5px;
 }
+
+li {
+    font-size: 16px; /* Slightly increased font size */
+    margin: 5px 0; /* Space between list items */
+    color: #333; /* Darker text color for readability */
+}
+
+/* Apply similar styling to other cards or sections as needed */
+
 
 .journey-title {
     display: flex;
