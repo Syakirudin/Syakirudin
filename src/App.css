@@ -1,0 +1,33 @@
+/* App.css */
+.home-container {
+    width: 90%; 
+    height: 85vh; 
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: stretch; /* Allows children to align to full container height */
+    justify-content: center;
+    padding: 5px 10px;
+    font-size: 24px;
+    color: #333;
+    margin: 3% auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Set flex-basis ratios for layout */
+.personal-div {
+    flex: 2; /* 2/6 of the container */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-div {
+    flex: 4; /* 4/6 of the container */
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}

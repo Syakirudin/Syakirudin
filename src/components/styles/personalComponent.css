@@ -1,0 +1,43 @@
+/* personalComponent.css */
+.personal-component {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    /* background-color: #f0f0f0; */
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Profile picture styling */
+.profile-pic {
+    width: 160px; /* Adjust size as needed */
+    height: 160px; /* Match width for a perfect circle */
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    background-color: rgb(74, 243, 139);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+/* Social icons styling */
+.social-icons {
+    display: flex;
+    gap: 15px; /* Space between icons */
+    margin-top: 15px; /* Spacing above the icons */
+}
+
+.social-icons a {
+    color: #333; /* Default icon color */
+    font-size: 1.5em; /* Adjust icon size */
+    transition: color 0.3s, transform 0.3s; /* Smooth hover effect */
+}
+
+/* Hover effect for icons */
+.social-icons a:hover {
+    color: #0073b1; /* Change to your preferred color on hover */
+    transform: scale(1.2); /* Slightly enlarge on hover */
+}
