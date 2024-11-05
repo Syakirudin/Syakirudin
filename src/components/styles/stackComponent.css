@@ -1,0 +1,52 @@
+.stack-use {
+    background-color: #ffffff;
+    width: 100%; /* Take full width of the overlay */
+    height: 95%; 
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    /* text-align: center; */
+    position: relative;
+    z-index: 1010;
+}
+
+/* Close button styling */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: #333;
+    border: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    line-height: 1;
+    transition: color 0.2s;
+}
+
+.close-btn:hover {
+    color: #d32f2f;
+}
+
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the icons */
+    margin-top: 20px; /* Space above the icons */
+}
+
+.tech-icons i {
+    font-size: 40px; /* Adjust size as needed */
+    margin: 10px; /* Space between icons */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.tech-icons i:hover {
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
