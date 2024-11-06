@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './styles/detailComponent.css';
-import AboutMeComponent from './aboutMeComponent';
-import StackComponent from './stackComponent';
+import AboutMeComponent from './homeComponents/aboutMeComponent';
+import StackComponent from './homeComponents/stackComponent';
 import { AnimatePresence } from 'framer-motion';
 
 const DetailComponent = () => {

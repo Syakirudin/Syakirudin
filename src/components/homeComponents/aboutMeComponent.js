@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/aboutMeComponent.css';
+import '../styles/aboutMeComponent.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { motion } from 'framer-motion';
 
@@ -17,8 +17,11 @@ const AboutMeComponent = ({ setShowAboutMe }) => {
             </button>
             <h2>About Me</h2>
             <p>
-                I'm a passionate software developer with a strong foundation in computer science.
-                I'm currently learning Javascript, web, and mobile development.
+                An individual who is passionate about technology.
+                
+                <br></br>
+
+
             </p>
         </motion.div>
     ); 
