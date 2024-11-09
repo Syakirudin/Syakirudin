@@ -3,6 +3,7 @@ import PersonalComponent from '../components/personalComponent'
 import DetailComponent from '../components/detailComponent'
 
 
+
 function Home() {
   return (
     <div className='home-container'>

@@ -1,0 +1,30 @@
+/* styles.css */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Layout for larger screens */
+  @media (min-width: 768px) {
+    .home-container {
+      flex-direction: row; /* Place components side-by-side */
+      justify-content: space-between;
+    }
+  
+    .personal-div,
+    .about-div {
+      flex: 1;
+      margin: 10px;
+    }
+  }
+  
+  /* Optional: Style for inner components */
+  .personal-div, .about-div {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    width: 100%;
+  }
+  

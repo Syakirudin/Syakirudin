@@ -1,5 +1,7 @@
 /* App.css */
 .home-container {
+    display: flex;
+    /* flex-direction: column; */
     width: 90%; 
     height: 85vh; 
     background-color: #fff;
